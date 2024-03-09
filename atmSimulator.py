@@ -11,6 +11,9 @@ while True:
     print("\nDone!\n")
   elif choice.lower() == 'withdraw':
     amount = float(input("Enter the amount of money you are going to be withdrawing: \n"))
+    if amount > balance:
+      print("Sorry you don't have that much money in your bank account")
+      continue
     balance = balance - amount
     print("\nDone\n")
   elif choice.lower() == 'balance':
@@ -18,3 +21,5 @@ while True:
   elif choice.lower() == 'exit':
     print("Thanks\n")
     break
+  else:
+    print("Unrecognizable\n")
