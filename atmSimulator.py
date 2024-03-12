@@ -3,8 +3,10 @@ amount = 0
 balance = 0
 
 while True:
+  # Loop for the simulation ( ATMs never stop )
   print("Welcome to the ATM\nWhat would you like to do today?\n  - Deposit\n  - Withdraw\n  - Balance\n  - Exit\n ")
   choice = input("")
+  # Conditions
   if choice.lower() == 'deposit':
     amount = float(input("Enter the amount of money you are going to be depositing: \n"))
     balance = balance + amount
